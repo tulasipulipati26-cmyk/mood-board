@@ -150,9 +150,27 @@ body.mood-sad {
 .spotify-player {
   display: block;
   width: 100%;
+  min-height: 352px;
   height: 352px;
   border: none;
   border-radius: 16px;
+}
+
+/* Spotify API injects an iframe inside this container */
+.spotify-player iframe {
+  display: block;
+  width: 100%;
+  height: 352px;
+  border: none;
+  border-radius: 16px;
+}
+
+.player-hint {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  max-width: 420px;
+  line-height: 1.4;
+  transition: color 1s ease, opacity 1s ease;
 }
 
 /* ============================================

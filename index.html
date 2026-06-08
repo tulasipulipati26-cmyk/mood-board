@@ -32,17 +32,11 @@
       </button>
     </div>
 
-    <!-- Spotify player — the src is updated by changeMood() in script.js -->
+    <!-- Spotify player — created by Spotify's iFrame API in script.js -->
     <div class="player-wrapper">
-      <iframe
-        id="spotify-player"
-        class="spotify-player"
-        src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZeKCadgRdKQ?utm_source=generator"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-        title="Spotify mood playlist"
-      ></iframe>
+      <div id="embed-iframe" class="spotify-player" title="Spotify mood playlist"></div>
     </div>
+    <p class="player-hint">Click a mood, then press ▶ in the player to start the playlist.</p>
 
   </main>
 
