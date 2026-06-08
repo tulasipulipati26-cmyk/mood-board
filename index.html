@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Mood Board</title>
+  <!-- Link to our custom stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="mood-focused">
+
+  <!-- Main container — everything is centered inside here -->
+  <main class="container">
+
+    <!-- Page title -->
+    <h1 class="title">🎵 My Mood Board</h1>
+    <p class="subtitle">Pick a vibe and let the music match your mood</p>
+
+    <!-- Mood buttons — each button calls changeMood() when clicked -->
+    <div class="mood-buttons">
+      <button class="mood-btn active" data-mood="focused" onclick="changeMood('focused')">
+        Focused 📚
+      </button>
+      <button class="mood-btn" data-mood="chill" onclick="changeMood('chill')">
+        Chill 🌿
+      </button>
+      <button class="mood-btn" data-mood="hype" onclick="changeMood('hype')">
+        Hype ⚡
+      </button>
+      <button class="mood-btn" data-mood="sad" onclick="changeMood('sad')">
+        Sad 🌧️
+      </button>
+    </div>
+
+    <!-- Spotify player — the src is updated by changeMood() in script.js -->
+    <div class="player-wrapper">
+      <iframe
+        id="spotify-player"
+        class="spotify-player"
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZeKCadgRdTQ?utm_source=generator"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+        title="Spotify mood playlist"
+      ></iframe>
+    </div>
+
+  </main>
+
+  <!-- Link to our JavaScript file (placed at the bottom so the page loads first) -->
+  <script src="script.js"></script>
+</body>
+</html>
