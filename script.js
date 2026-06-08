@@ -12,7 +12,7 @@ const moods = {
   focused: {
     bodyClass: "mood-focused",
     playlist:
-      "https://open.spotify.com/embed/playlist/37i9dQZF1DWZeKCadgRdTQ?utm_source=generator",
+      "https://open.spotify.com/embed/playlist/37i9dQZF1DWZeKCadgRdKQ?utm_source=generator",
   },
   chill: {
     bodyClass: "mood-chill",
